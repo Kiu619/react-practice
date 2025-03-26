@@ -47,7 +47,7 @@ const SignInForm: React.FC = () => {
       }
       
       // Chuyển hướng về trang chủ
-      navigate('/welcome')
+      navigate('/')
     } catch (err: any) {
       // Xử lý thông báo lỗi cụ thể
       let errorMessage = 'Đăng nhập thất bại, vui lòng thử lại'

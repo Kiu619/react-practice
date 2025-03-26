@@ -18,7 +18,7 @@ const Auth: React.FC = () => {
   // Nếu đã đăng nhập, chuyển hướng về trang chủ
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/welcome')
+      navigate('/')
     }
   }, [isAuthenticated, navigate])
   

@@ -14,7 +14,7 @@ const NotFound: React.FC = () => {
         extra={
           <Button 
             type="primary" 
-            onClick={() => navigate('/welcome')}
+            onClick={() => navigate('/')}
             className="bg-blue-500 hover:bg-blue-600"
           >
             Trở về Trang chủ

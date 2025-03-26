@@ -1,12 +1,11 @@
-import React from 'react'
+import { useSelector } from 'react-redux'
+import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Outlet, Route, Routes, Navigate } from 'react-router-dom'
-import Welcome from './pages/Welcome/Welcome'
 import Auth from './pages/Auth/Auth'
 import Lesson from './pages/Lesson/Lesson'
-import { useSelector } from 'react-redux'
-import { selectCurrentUser } from './store/slices/userSlice'
 import NotFound from './pages/NotFound/NotFound'
+import Welcome from './pages/Welcome/Welcome'
+import { selectCurrentUser } from './store/slices/userSlice'
 
 function App() {
 
@@ -23,7 +22,7 @@ function App() {
 
     <Routes>
       <Route path='/' element={<PrivateRoute user={currentUser} />}>
-        <Route path="/welcome" element={<Welcome />} />
+        <Route path="" element={<Welcome />} />
         <Route path="/lesson" element={<Lesson />} />
         <Route path="/lesson/:id" element={<Lesson />} />
       </Route>

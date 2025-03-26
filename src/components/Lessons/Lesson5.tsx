@@ -182,7 +182,7 @@ const Lesson5: React.FC = () => {
         }
         
         await updateProduct(updateData).unwrap()
-          .then((response) => {
+          .then(() => {
             notification.success({
               message: 'Cập nhật thành công',
               description: `Sản phẩm "${values.title}" đã được cập nhật.`,
@@ -201,7 +201,7 @@ const Lesson5: React.FC = () => {
         const addData: AddProductRequest = values
         
         await addProduct(addData).unwrap()
-          .then((response) => {
+          .then(() => {
             notification.success({
               message: 'Thêm thành công',
               description: `Sản phẩm "${values.title}" đã được thêm mới.`,
@@ -228,7 +228,7 @@ const Lesson5: React.FC = () => {
   const handleDelete = (id: number) => {
     // Gọi API xóa sản phẩm
     deleteProduct(id).unwrap()
-      .then((response) => {
+      .then(() => {
         notification.success({
           message: 'Xóa thành công',
           description: `Sản phẩm đã được xóa.`,

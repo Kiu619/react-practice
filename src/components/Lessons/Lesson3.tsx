@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { Table, Button, Space, Avatar, Typography, Tag } from 'antd'
-import type { ColumnsType } from 'antd/es/table'
-import type { TablePaginationConfig } from 'antd/es/table'
-import type { FilterValue, SorterResult } from 'antd/es/table/interface'
 import { faker } from '@faker-js/faker'
+import { Avatar, Button, Space, Table, Tag, Typography } from 'antd'
+import type { ColumnsType, TablePaginationConfig } from 'antd/es/table'
+import type { FilterValue, SorterResult } from 'antd/es/table/interface'
+import React, { useEffect, useState } from 'react'
 
 interface UserData {
   key: string
